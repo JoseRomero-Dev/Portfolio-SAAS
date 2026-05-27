@@ -3,6 +3,7 @@ export default function Home() {
     <div>
       <h1>Mi primer SaaS</h1>
       <p>Estoy aprendiendo React y Next.js</p>
+      <p>Hola</p>
     </div>
   );
 }
