@@ -1,7 +1,10 @@
-export default function Hero() {
+"use client";
 
-  const nombre = "Jose Manuel";
-  const profesion = "Frontend Developer";
+export default function Hero({nombre, profesion, descripcion}) {
+
+  function saludar(){
+    alert("Hola");
+  }
 
   return (
     <main className="min-h-screen bg-black text-white flex flex-col justify-center items-center">
@@ -15,10 +18,10 @@ export default function Hero() {
       </h2>
 
       <p className="max-w-xl text-center text-lg mb-8">
-        Estoy construyendo mi primer SaaS con React y Next.js
+        {descripcion}
       </p>
 
-      <button className="bg-white text-black px-6 py-3 rounded-xl hover:scale-105 transition">
+      <button onClick= {saludar} className="bg-white text-black px-6 py-3 rounded-xl hover:scale-105 transition">
         Contactar
       </button>
 
